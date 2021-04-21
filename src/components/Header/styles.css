@@ -45,6 +45,7 @@ header .header__middle > input {
     padding: 4px;
     font-size: 12px;
     background-color: transparent;
+    outline: none;
 }
 
 header .header__right > .MuiAvatar-root {

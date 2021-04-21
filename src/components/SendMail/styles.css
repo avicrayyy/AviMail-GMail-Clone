@@ -4,4 +4,54 @@
     right: 50px;
     background-color: #404040;
     width: 40%;
+    height: 40%;
+    max-width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.24);
+}
+
+.sendMail__header > span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sendMail__header > .sendMail__headerClose {
+    cursor: pointer;
+}
+
+.sendMail > form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.sendMail > form > input {
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+}
+
+.sendMail > form > input:last-child {
+    height: 100% !important;
+}
+
+.sendMail__header{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 16px ;
+    justify-content: space-between;
+}
+
+.sendMail__button {
+    background-color: #3079ed !important;
+    padding: 6px!important;
+    margin: 16px !important;
 }

@@ -8,14 +8,23 @@ import { Close } from "@material-ui/icons";
 const SendMail = () => {
   return (
     <div className="sendMail">
-      <div className="sendMail__header">New Message</div> <Close />
-      send mail here feggit
+      <div className="sendMail__header">
+        <span>New Message</span>
+        <Close className="sendMail__headerClose" />
+      </div>
       <form>
-        <input type="text" placeholder="Title" />
-        <input type="text" placeholder="Recipient" />
-        <input type="text" placeholder="Message Body" />
+        <input type="text" placeholder="To" />
+        <input type="text" placeholder="Subject" />
+        <input type="text" placeholder="Message..." />
         <div className="sendMail__options">
-          <Button>Send</Button>
+          <Button
+            className="sendMail__button"
+            variant="contained"
+            color="primary"
+            type="submit"
+          >
+            Send
+          </Button>
         </div>
       </form>
     </div>
