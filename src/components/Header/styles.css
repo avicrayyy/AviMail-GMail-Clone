@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    padding: 4px 20px;
+}
+
+header .logo {
+    object-fit: contain;
+    margin-left: 6px;
+    height: 50px;
+}
+
+header .logo-name {
+    color:blue;
+    font-size: 21px;
+}
+
+header .logo-name .bold{
+    color: #000;
+}
+
+header .header__left, 
+header .header__middle, 
+header .header__right {
+    display:flex;
+    align-items: center;
+}
+
+header .header__middle {
+    flex: 0.7;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 6px;
+} 
+
+header .header__middle > .MuiSvgIcon-root {
+    color: gray;
+}
+
+header .header__middle > input {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+header .header__right > .MuiAvatar-root {
+    
+}
