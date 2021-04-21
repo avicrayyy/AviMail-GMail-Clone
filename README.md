@@ -20,4 +20,4 @@ Hosted on [Firebase](https://firebase.google.com/).
 
 Used BEM markup naming convention just to try it out.
 
-**Side Note: BEM is not recommended for production level markup naming convention because of** *ehem* **ugliness** *ehem***, readability, and extreme repetition.**
+**Side Note: BEM is not recommended for production level markup naming convention because of** *ehem* **ugliness** *ehem* **, readability, and extreme repetition.**
