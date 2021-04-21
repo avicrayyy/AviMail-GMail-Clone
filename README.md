@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## AviMail - a GMail Clone by Avi
 
-## Available Scripts
+AviMail, in a nutshell, is a GMail Clone mini-project. *nuf said*
 
-In the project directory, you can run:
+Jokes aside, you can compose an "email" (custom backend capabilities that allows people to email via the app is yet to be added) and it will automatically reflect and push the email to the list.
 
-### `yarn start`
+**Note: Full functionalities of GMail is not integrated on this mini-project**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Front-End: `React`, and `Material-UI` (for styling)
 
-### `yarn test`
+Back-End: `Firebase` (BaaS) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Just FYI
 
-### `yarn build`
+This mini-project was bootstrapped with [Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hosted on [Firebase](https://firebase.google.com/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Used BEM markup naming convention just to try it out.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Side Note: BEM is not recommended for production level markup naming convention because of *ehem* ugliness *ehem*, readability, and extreme repetition.**
