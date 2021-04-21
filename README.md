@@ -8,7 +8,7 @@ Jokes aside, you can compose an "email" (sending actual email via the app is yet
 
 ## Tech Stack
 
-Front-End: `React`, `Redux`, `Redux Toolkit`, and `Material-UI` (for styling)
+Front-End: `React`, `Redux (Toolkit)`, and `Material-UI` (for styling)
 
 Back-End: `Firebase` (BaaS) 
 

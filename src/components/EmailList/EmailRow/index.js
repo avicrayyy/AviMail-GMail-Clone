@@ -9,7 +9,7 @@ const EmailRow = ({ id, title, subject, description, time }) => {
   const history = useHistory();
 
   return (
-    <div onClick={() => history.push("/mail")} className="emailRow">
+    <div className="emailRow">
       <div className="emailRow__options">
         <Checkbox />
         <IconButton>
@@ -19,14 +19,19 @@ const EmailRow = ({ id, title, subject, description, time }) => {
           <LabelImportantOutlined />
         </IconButton>
       </div>
-      <h4 className="emailRow__title">{title}</h4>
-      <div className="emailRow__message">
-        <h4>
-          {subject}{" "}
-          <span className="emailRow__description">- {description}</span>
-        </h4>
+      <div
+        onClick={() => history.push("/mail")}
+        className="emailRow__clickable"
+      >
+        <h4 className="emailRow__title">{title}</h4>
+        <div className="emailRow__message">
+          <h4>
+            {subject}{" "}
+            <span className="emailRow__description">- {description}</span>
+          </h4>
+        </div>
+        <div className="emailRow__time">{time}</div>
       </div>
-      <div className="emailRow__time">{time}</div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 .emailRow {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     border-bottom: 1px solid whitesmoke;
@@ -16,9 +17,15 @@
     display: flex;
 }
 
+.emailRow__clickable {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
 .emailRow__message {
     display: flex;
-    flex: 0.8;
     align-items: center;
     font-size: 13px;
 }

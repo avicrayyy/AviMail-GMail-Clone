@@ -35,6 +35,13 @@
     padding-left: 16px;
 }
 
+.mail__threadRecipientDetails > h3 {
+    font-size: medium;
+}
+.mail__threadRecipientDetailsSentOn {
+    font-size: small;
+}
+
 .mail__threadBody {
     padding: 16px;
 }

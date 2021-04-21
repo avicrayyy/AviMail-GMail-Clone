@@ -73,7 +73,7 @@ const Mail = () => {
         <div className="mail__threadRecipient">
           <Avatar />
           <div className="mail__threadRecipientDetails">
-            <h3>Sent By</h3>
+            <h3>John Snow</h3>
             <div className="mail__threadRecipientDetailsSentOn">
               April 21, 2021 10:00 PM
             </div>
