@@ -38,8 +38,8 @@
     padding: 10px;
 }
 
-.sendMail > form > input:last-child {
-    height: 100% !important;
+.sendMail__message {
+    flex: 1;
 }
 
 .sendMail__header{
@@ -50,8 +50,19 @@
     justify-content: space-between;
 }
 
+.sendMail__options {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .sendMail__button {
     background-color: #3079ed !important;
     padding: 6px!important;
-    margin: 16px !important;
+}
+
+.sendMail__errorMessage{
+    color: red;
+    font-size: 13px;
 }

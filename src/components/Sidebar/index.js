@@ -1,4 +1,5 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Button, IconButton } from "@material-ui/core";
 
 // Icons
@@ -19,21 +20,30 @@ import {
 // Sub-components
 import SidebarOption from "./SidebarOption";
 
+// Reducers
+import { openSendMessage } from "../../features/mail/mailSlice";
+
 import "./styles.css";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="sidebar">
-      <Button className="sidebar__compose" startIcon={<Add />}>
+      <Button
+        onClick={() => dispatch(openSendMessage())}
+        className="sidebar__compose"
+        startIcon={<Add />}
+      >
         Compose
       </Button>
       <SidebarOption Icon={Inbox} title={"Inbox"} number={69} selected={true} />
-      <SidebarOption Icon={Star} title={`Starred`} number={69} />
-      <SidebarOption Icon={AccessTime} title={`Snoozed`} number={69} />
-      <SidebarOption Icon={LabelImportant} title={`Important`} number={69} />
-      <SidebarOption Icon={NearMe} title={`Draft`} number={69} />
-      <SidebarOption Icon={Note} title={`Sent`} number={69} />
-      <SidebarOption Icon={ExpandMore} title={`More`} number={69} />
+      <SidebarOption Icon={Star} title={`Starred`} number={0} />
+      <SidebarOption Icon={AccessTime} title={`Snoozed`} number={0} />
+      <SidebarOption Icon={LabelImportant} title={`Important`} number={0} />
+      <SidebarOption Icon={NearMe} title={`Draft`} number={0} />
+      <SidebarOption Icon={Note} title={`Sent`} number={0} />
+      <SidebarOption Icon={ExpandMore} title={`More`} number={0} />
       <div className="sidebar__footer">
         <div className="sidenar__footerIcons">
           <IconButton>
