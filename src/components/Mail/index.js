@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, IconButton } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./styles.css";
 
 // Icons
@@ -19,8 +20,12 @@ import {
   WatchLater,
 } from "@material-ui/icons";
 
+import { selectOpenMail } from "../../features/mail/mailSlice";
+
 const Mail = () => {
   const history = useHistory();
+  const selector = useSelector(selectOpenMail);
+
   return (
     <div className="mail">
       <div className="mail__tools">
@@ -68,18 +73,23 @@ const Mail = () => {
       <div className="mail__thread">
         <div className="mail__threadTitle">
           <LabelImportant style={{ fill: "#757575" }} />
-          <h3>Hello Zawarudo</h3>
+          <h3>{selector?.subject}</h3>
         </div>
         <div className="mail__threadRecipient">
           <Avatar />
           <div className="mail__threadRecipientDetails">
-            <h3>John Snow</h3>
+            <h3>Sender</h3>
+            <span className="mail__threadRecipientDetailsSentTo">
+              {"<To: "}
+              <span>{selector?.title}</span>
+              {">"}
+            </span>
             <div className="mail__threadRecipientDetailsSentOn">
-              April 21, 2021 10:00 PM
+              {selector?.time}
             </div>
           </div>
         </div>
-        <div className="mail__threadBody">this is where mail should be</div>
+        <div className="mail__threadBody">{selector?.description}</div>
       </div>
     </div>
   );

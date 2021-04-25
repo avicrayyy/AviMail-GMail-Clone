@@ -42,6 +42,11 @@
     font-size: small;
 }
 
+.mail__threadRecipientDetailsSentTo {
+    font-size: small;
+    font-style: italic;
+}
+
 .mail__threadBody {
     padding: 16px;
 }
