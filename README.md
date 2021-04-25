@@ -6,13 +6,15 @@ AviMail, in a nutshell, is a GMail Clone mini-project. *nuf said*
 
 Jokes aside, you can compose an "email" (sending actual email via the app is yet to be added) and it will automatically reflect and push the email to the list; Google authentication is also `enabled`.
 
+Link to project: [AviMail] (https://avimail-buld.web.ap)
+
 **Note: Full functionalities of GMail is not integrated on this mini-project**
 
 ## Tech Stack
 
 Front-End: `React`, `Redux (Toolkit)`, and `Material-UI` (for styling)
 
-Back-End: `Firebase` (BaaS) 
+Back-End: `Firebase` (BaaS, used for Hosting, Database, and Google Authentication) 
 
 ## Just FYI
 
