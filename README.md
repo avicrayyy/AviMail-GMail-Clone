@@ -6,7 +6,7 @@ AviMail, in a nutshell, is a GMail Clone mini-project. *nuf said*
 
 Jokes aside, you can compose an "email" (sending actual email via the app is yet to be added) and it will automatically reflect and push the email to the list; Google authentication is also `enabled`.
 
-Project Link: [AviMail] (https://avimail-buld.web.ap)
+Project Link: [AviMail] (https://avimail-buld.web.app)
 
 **Note: Full functionalities of GMail is not integrated on this mini-project**
 
